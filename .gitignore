@@ -25,4 +25,4 @@ build/Release
 node_modules
 
 #Application generated files
-app.js
+*.coffee.js
