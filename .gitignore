@@ -26,3 +26,4 @@ node_modules
 
 #Application generated files
 *.coffee.js
+*.private.js

@@ -12,6 +12,7 @@ rule '.coffee.js', '.coffee', async:true , ->
     jake.exec cmd, ->
         complete();    
 
+task 'js', [ reqCoffee 'public/js/clientapp' ]
 
 task 'app' ,[ reqCoffee 'app']
 
@@ -20,5 +21,5 @@ task 'routes', [
     reqCoffee 'routes/users'
 ]    
 
-task 'default',['app','routes']
+task 'default',['app','routes','js']
 
